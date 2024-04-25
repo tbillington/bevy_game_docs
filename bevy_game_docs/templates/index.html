@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="font-semibold text-2xl">
+  Spacegame Docs
+</h1>
+
+<div class="my-6"></div>
+
+<p class="font-semibold text-lg">Components (20)</p>
+<div class="pl-4 space-y-4">
+  <div> asteroid::Asteroid
+  </div>
+  <div>
+    <p class="text-gray-400">mod belt</p>
+    <div class="pl-4">
+      BeltVisualisation
+      <div class="pl-4">
+        <p>Queried <span class="underline font-semibold text-red-300">Mutably</span> in <span class="">fn <span
+              style="color:rgb(43, 171, 99)">sync_belt_visualisation</span></span></p>
+        <p>Queried Immutably in <span class="">fn <span
+              style="color:rgb(43, 171, 99)">handle_belt_vis_clicked</span></span></p>
+      </div>
+    </div>
+  </div>
+  <div>
+    <p class="text-gray-400">mod building</p>
+    <div class="pl-4">
+      <div> BuildingPlacement
+      </div>
+      <div> Ports
+      </div>
+      <div> BuiltBuilding
+      </div>
+      <div> StorageBuilding
+      </div>
+      <div> BuildingPlacement2
+      </div>
+      <div> DroneControlBuilding
+      </div>
+      <div> CreatorBuilding
+        <div class="pl-4">
+          <p>Queried <span class="underline font-semibold text-red-300">Mutably</span> in <span class="">fn
+              <span style="color:rgb(43, 171, 99)">update_creator_building</span></span></p>
+        </div>
+      </div>
+      <div> BeltStart
+      </div>
+    </div>
+  </div>
+  <div>
+    <p class="text-gray-400">mod camera</p>
+    <div class="pl-4">
+      <div> FocusPoint
+      </div>
+      <div> MainCamera
+      </div>
+      <div> BlackoutQuad
+      </div>
+    </div>
+  </div>
+  <div> crosshair::Crosshair
+  </div>
+  <div>
+    <p class="text-gray-400">mod ship</p>
+    <div class="pl-4">
+      <div> CargoHold
+        <div class="pl-4">
+          <p>Queried <span class="underline font-semibold text-red-300">Mutably</span> in <span class="">fn <span
+                style="color:rgb(43, 171, 99)">shoot_mining_turret</span></span></p>
+          <p>Queried Immutably in <span class="">fn craft::<span style="color:rgb(43, 171, 99)">craft_ui</span></span>
+          </p>
+          <p>Queried <span class="underline font-semibold text-red-300">Mutably</span> in <span class="">fn
+              tech_tree::<span style="color:rgb(43, 171, 99)">tech_tree</span></span></p>
+        </div>
+      </div>
+      <div> MiningTurret
+      </div>
+      <div> PlayerShip
+      </div>
+      <div> Drive
+        <div class="pl-4">
+          <p>Queried <span class="underline font-semibold text-red-300">Mutably</span> in <span class="">fn
+              building::<span style="color:rgb(43, 171, 99)">port_charge_docked_ship</span></span></p>
+        </div>
+      </div>
+      <div> Ship
+      </div>
+    </div>
+  </div>
+  <div> selection::Selection
+  </div>
+</div>
+
+<div class="my-4"></div>
+
+<p class="font-semibold text-lg">Resources (8)</p>
+<div class="pl-4">
+  <div> building::CurrentlySelectedBuilding
+  </div>
+  <div> camera::CameraSettings
+  </div>
+  <div> belt::BeltVisualisationMap
+  </div>
+  <div> tech_tree::TechTree
+  </div>
+  <div> skybox::SkyboxLoader
+  </div>
+  <div> craft::CraftMenu
+  </div>
+  <div> debug::InspectorShown
+  </div>
+  <div> building::BuildingMenu
+  </div>
+</div>
+
+{% endblock content %}
